@@ -275,7 +275,10 @@
     color: var(--dark);
     border-color: var(--dark);
 }
-
+/*ABOUT LISTS*/
+.about_lists {
+    list-style-type: none;
+}
 
 /*** Team ***/
 .team-item img {
