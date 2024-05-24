@@ -275,10 +275,62 @@
     color: var(--dark);
     border-color: var(--dark);
 }
-/*ABOUT LISTS*/
+/*ABOUT LISTS Start*/
 .about_lists {
     list-style-type: none;
 }
+
+.two_columns {
+    column-count: 2;
+}
+/*ABOUT LISTS End*/
+
+/**BG SECTIONS START**/
+.bg-grey {
+    background-color:#F7F7F7;
+}
+
+/**BG SECTIONS END**/
+
+/**NEW ROW START**/
+.newrow {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem; /* Optional: set vertical gutter if needed */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: calc(var(--bs-gutter-y) * -1);
+    margin-right: calc(var(--bs-gutter-x) / -2);
+    margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.newrow > div {
+    width: calc(50% - var(--bs-gutter-x)); /* Adjust width to account for gutter */
+    box-sizing: border-box;
+    padding: 2rem; /* Optional: adjust padding */
+    margin: var(--bs-gutter-y) calc(var(--bs-gutter-x) / 2); /* Add horizontal and vertical margins */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .newrow > div {
+        width: 100%; /* Full width on smaller screens */
+        margin: var(--bs-gutter-y) 0; /* Remove horizontal margins */
+    }
+}
+/**NEW ROW END**/
+
+/**ZOOM Start**/
+
+  .yellow-bg:hover{
+    background-color: rgba(245, 245, 69, 0.5);;
+    color: #7528c9;
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+  }
+
+/**ZOOM End**/
 
 /*** Team ***/
 .team-item img {
